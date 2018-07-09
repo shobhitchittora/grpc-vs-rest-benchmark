@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package grettings;
+package grettings_package;
 
-service Greetings {
+service Greeting {
   rpc greetDefault (Empty) returns (Greet) {}
-  rpc greetName () return (Greet) {}
+  rpc greetName (Name) returns (Greet) {}
 }
 
 message Empty {
@@ -13,4 +13,8 @@ message Empty {
 
 message Greet {
   string message = 1;
+}
+
+message Name{
+  string name = 1;
 }

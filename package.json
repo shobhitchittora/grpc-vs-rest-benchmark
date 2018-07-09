@@ -2,9 +2,11 @@
   "name": "grpc-vs-rest-benchmark",
   "version": "1.0.0",
   "description": "A NodeJS benchmark comparing gRPC server against an Express server",
+  "main": "src",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:rest": "PORT=3000 node src/rest-server.js",
+    "start:grpc": "PORT=8080 node src/grpc-server.js"
   },
   "repository": {
     "type": "git",
