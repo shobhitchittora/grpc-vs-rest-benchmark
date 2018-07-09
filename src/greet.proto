@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package grettings;
+
+service Greetings {
+  rpc greetDefault (Empty) returns (Greet) {}
+  rpc greetName () return (Greet) {}
+}
+
+message Empty {
+
+}
+
+message Greet {
+  string message = 1;
+}
